@@ -1,7 +1,15 @@
+@import "./01-variables.less";
+
 .order {
-  // background-image: url("../img/car-bg.png");
+  padding-top: 50px;
+  padding-bottom: 50px;
+  // 
   background-repeat: no-repeat;
   background-size: cover;
+
+  &__img {
+    display: none;
+  }
   
   &__content-box {
     text-align: center;
@@ -15,5 +23,84 @@
 
   &__content {
     margin-bottom: 35px;
+  }
+
+  &__btn {
+    max-width: 242px;
+    padding: 13px 30px;
+    margin:  0 auto;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #1690F0;
+
+
+    background-color: #F1F6FB;
+  }
+}
+
+@media(min-width: @tablet-width){
+  .order {
+    background-image: url("../img/car-bg.png");
+
+    &__container {
+      display: flex;
+    }
+
+    &__img-box {
+      width: 50%;
+      transform: translate(-50px, -60px);
+
+      // background-image: url("../img/car.png");
+      // background-size: contain;
+      // background-repeat: no-repeat;
+    }
+
+    &__img {
+      display: block;
+    }
+
+    &__content-box {
+      width: 50%;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+      color: #fff;
+    }
+  }
+}
+
+@media(min-width: 1024px){
+  .order {
+    &__img-box {
+      transform: translate(-50px, -160px);
+    }
+  }
+}
+
+@media(min-width: @desctop-width){
+  .order {
+    min-height: 796px;
+
+    &__img-box {
+      transform: translate(-50px, -175px);
+    }
+
+    &__content-box {
+      width: 675px;
+    }
+
+    &__title {
+      font-size: 41px;
+      line-height: 50px;
+    }
+
+    &__content {
+      color: #fff;
+      font-size: 28px;
+      line-height: 34px;
+    }
   }
 }
