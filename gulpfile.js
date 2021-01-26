@@ -42,12 +42,11 @@ gulp.task('getAllCSS', () => {
           cascade: false,
         })
       )
-      .pipe(gulp.dest('public/styles'))
       .pipe(concat('styles.css'))
       //.pipe(gulp.dest("public/styles"))
       .pipe(cssmin())
       .pipe(rename('styles.min.css'))
-      .pipe(gulp.dest('public'))
+      .pipe(gulp.dest('public/styles'))
   );
 });
 
