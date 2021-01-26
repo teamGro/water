@@ -1,0 +1,124 @@
+@import "./01-variables.less";
+
+.advantages {
+    padding-top   : 50px;
+    padding-bottom: 50px;
+
+    &__title {
+        margin-bottom: 5px;
+
+        font-size : 24px;
+        text-align: center;
+    }
+
+    &__img-box {
+        text-align: center;
+    }
+
+    &__content-box {
+        display : flex;
+        overflow: hidden;
+    }
+
+    &__left,
+    &__right {
+        width         : 100%;
+        display       : flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        position: relative;
+
+        padding-left: 77px;
+        padding-top : 10px;
+        width       : 100%;
+
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &::before {
+            content : '';
+            position: absolute;
+            left    : 0;
+            top     : -10px;
+
+            width : 60px;
+            height: 60px;
+
+            background-image   : url("../img/icon-mobile-1.png");
+            background-repeat  : no-repeat;
+            background-position: top, left;
+        }
+
+        &:nth-child(2)::before {
+            background-image: url("../img/icon-mobile-2.png");
+        }
+
+        &:nth-child(3)::before {
+            background-image: url("../img/icon-mobile-3.png");
+        }
+
+        &_right:nth-child(1)::before {
+            background-image: url("../img/icon-mobile-4.png");
+        }
+
+        &_right:nth-child(2)::before {
+            background-image: url("../img/icon-mobile-5.png");
+        }
+
+        &_right:last-child::before {
+            background-image: url("../img/icon-mobile-6.png");
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+
+        font-weight: 600;
+        font-size  : 14px;
+        line-height: 17px;
+    }
+
+    &__content {
+        font-size  : 12px;
+        line-height: 15px;
+    }
+
+    &__center {
+        display: none;
+    }
+
+    &__dots {
+        margin-top     : 30px;
+        height         : 15px;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+    }
+
+    &__dot {
+        width        : 6px;
+        height       : 6px;
+        border-radius: 50%;
+
+        background-color: #C4C4C4;
+        transition      : all @transition-effect;
+    }
+
+    &__dot:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    &__dot:focus,
+    &__dot:active {
+        outline: none;
+    }
+
+    &__dot.active {
+        background-color: #fff;
+        border          : 2px solid #1690F0;
+    }
+}
