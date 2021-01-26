@@ -5,7 +5,7 @@
   font-style  : normal;
   font-weight : 400;
   font-display: swap;
-  src         : url('../montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'), url('../montserrat-v15-latin_cyrillic-regular.woff') format('woff');
+  src         : url('../webfonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'), url('../webfonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-style  : normal;
   font-weight : 500;
   font-display: swap;
-  src         : url('../montserrat-v15-latin_cyrillic-500.woff2') format('woff2'), url('../montserrat-v15-latin_cyrillic-500.woff') format('woff');
+  src         : url('../webfonts/montserrat-v15-latin_cyrillic-500.woff2') format('woff2'), url('../webfonts/montserrat-v15-latin_cyrillic-500.woff') format('woff');
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-style  : normal;
   font-weight : 600;
   font-display: swap;
-  src         : url('../montserrat-v15-latin_cyrillic-600.woff2') format('woff2'), url('../montserrat-v15-latin_cyrillic-600.woff') format('woff');
+  src         : url('../webfonts/montserrat-v15-latin_cyrillic-600.woff2') format('woff2'), url('../webfonts/montserrat-v15-latin_cyrillic-600.woff') format('woff');
 }
 
 @font-face {
@@ -29,7 +29,7 @@
   font-style  : normal;
   font-weight : 700;
   font-display: swap;
-  src         : url('../montserrat-v15-latin_cyrillic-700.woff2') format('woff2'), url('../montserrat-v15-latin_cyrillic-700.woff') format('woff');
+  src         : url('../webfonts/montserrat-v15-latin_cyrillic-700.woff2') format('woff2'), url('../webfonts/montserrat-v15-latin_cyrillic-700.woff') format('woff');
 }
 
 html {
@@ -53,7 +53,7 @@ body {
   max-width : 100%;
   overflow-x: hidden;
 
-  background-color: #E5E5E5;
+  background-color: #fff;
 
   font-family   : 'Montserrat', Arial, sans-serif;
   font-size     : @font-size;
@@ -128,9 +128,9 @@ button:focus, button:active {
 }
 
 .title {
-  font-size  : @title-font-size;
+  font-size  : 30px;
   font-weight: @title-weight;
-  line-height: @title-line-height;
+  line-height: 110%;
   color:@title-font-color;
 }
 
@@ -141,14 +141,19 @@ button:focus, button:active {
   }
 }
 
+@media(min-width: 1024px){
+  .title {
+    font-size  : @title-font-size;
+    line-height: @line-height;
+  }
+}
+
 @media (min-width: @desctop-width) {
   .container {
     padding: 0 50px;
   }
 
-  .title {
-    font-size: 50px;
-  }
+  
 
   .subtitle-text {
     font-size: 22px;
