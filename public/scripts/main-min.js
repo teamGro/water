@@ -1,0 +1,1 @@
+!function(){"use strict";let o=$(".owl-carousel");$(window).width()<768&&o.owlCarousel({items:1,loop:!0,dotsClass:"advantages__dots",dotClass:"advantages__dot"}),$(window).on("resize",()=>{$(window).width()>=768?o.trigger("destroy.owl.carousel"):o.owlCarousel({items:1,loop:!0,dotsClass:"advantages__dots",dotClass:"advantages__dot"})})}();
