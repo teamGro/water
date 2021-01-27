@@ -122,3 +122,91 @@
         border          : 2px solid #1690F0;
     }
 }
+
+@media(min-width: @desctop-width){
+    .advantages {
+        padding-bottom: 150px;
+
+        &__title {
+            max-width: 630px;
+            margin-bottom: 65px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 45px;
+            line-height: 55px;
+        }
+
+        &__img-box {
+            display: none;
+        }
+
+        &__content-box {
+            //display: block;
+        }
+
+        &__left, &__right {
+            width: auto;
+        }
+
+
+        &__item {                
+            padding-left: 0;
+            padding-right: 115px;
+            padding-top : 10px;
+            width       : 400px;
+
+            text-align: right;
+    
+    
+            &:not(:last-child) {
+                margin-bottom: 80px;
+            }
+    
+            &::before {
+                content : '';
+                position: absolute;
+                left    : auto;
+                right: 0;
+                top     : -10px;
+    
+                width : 75px;
+                height: 75px;
+    
+                background-image   : url("../img/icon-1.png");
+                background-repeat  : no-repeat;
+                background-position: top, right;
+            }
+    
+            &:nth-child(2)::before {
+                background-image: url("../img/icon-2.png");
+            }
+    
+            &:nth-child(3)::before {
+                background-image: url("../img/icon-3.png");
+            }
+
+            &_right {
+                text-align: left;
+            }
+    
+            &_right:nth-child(1)::before {
+                background-image: url("../img/icon-4.png");
+            }
+    
+            &_right:nth-child(2)::before {
+                background-image: url("../img/icon-5.png");
+            }
+    
+            &_right:last-child::before {
+                background-image: url("../img/icon-6.png");
+            }
+        }
+
+        &__center {
+            display: block;
+            // float: left;
+            // shape-outside: circle(50%);
+            width: 555px;
+        }
+    }
+}
