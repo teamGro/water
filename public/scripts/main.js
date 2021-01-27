@@ -27,12 +27,16 @@ alt="Почему стоит заказать воду у нас?">`;
             return;
         }
 
+        $('.advantages__big-img').remove();
+
         owl.owlCarousel({
             items: 1,
             loop: true,
             dotsClass: 'advantages__dots',
             dotClass: 'advantages__dot',
         });
+
+
 
     });
 

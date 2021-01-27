@@ -122,6 +122,21 @@
     }
 }
 
+@media(min-width: @tablet-width) {
+    .advantages {
+        &__left {
+            margin-right: 50px;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .advantages {
+        padding-top   : 100px;
+        padding-bottom: 150px;
+    }
+}
+
 @media(min-width: @desctop-width) {
     .advantages {
         padding-bottom: 150px;
@@ -149,11 +164,12 @@
         }
 
         &__left {
-            transform: translateX(40px);
+            transform   : translateX(10px);
+            margin-right: 0;
         }
 
         &__right {
-            transform: translateX(-40px);
+            transform: translateX(-10px);
         }
 
 

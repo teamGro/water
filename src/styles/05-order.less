@@ -1,24 +1,24 @@
 @import "./01-variables.less";
 
 .order {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top      : 50px;
+  padding-bottom   : 50px;
   // 
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size  : cover;
 
   &__img {
     display: none;
   }
-  
+
   &__content-box {
     text-align: center;
   }
-  
+
   &__title {
     // color: #fff;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom : 15px;
   }
 
   &__content {
@@ -27,20 +27,27 @@
 
   &__btn {
     max-width: 242px;
-    padding: 13px 30px;
-    margin:  0 auto;
+    padding  : 13px 30px;
+    margin   : 0 auto;
 
     font-weight: 600;
-    font-size: 15px;
+    font-size  : 15px;
     line-height: 18px;
-    color: #1690F0;
+    color      : #1690F0;
 
 
     background-color: #F1F6FB;
+    transition      : all @transition-effect;
+
+    &:hover {
+      color       : #fff;
+      border-color: #1482d8;
+      background  : #1482d8;
+    }
   }
 }
 
-@media(min-width: @tablet-width){
+@media(min-width: @tablet-width) {
   .order {
     background-image: url("../img/car-bg.png");
 
@@ -49,7 +56,7 @@
     }
 
     &__img-box {
-      width: 50%;
+      width    : 50%;
       transform: translate(-50px, -60px);
 
       // background-image: url("../img/car.png");
@@ -67,12 +74,12 @@
 
     &__title {
       margin-bottom: 30px;
-      color: #fff;
+      color        : #fff;
     }
   }
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1024px) {
   .order {
     &__img-box {
       transform: translate(-50px, -160px);
@@ -80,7 +87,7 @@
   }
 }
 
-@media(min-width: @desctop-width){
+@media(min-width: @desctop-width) {
   .order {
     min-height: 796px;
 
@@ -93,13 +100,13 @@
     }
 
     &__title {
-      font-size: 41px;
+      font-size  : 41px;
       line-height: 50px;
     }
 
     &__content {
-      color: #fff;
-      font-size: 28px;
+      color      : #fff;
+      font-size  : 28px;
       line-height: 34px;
     }
   }
