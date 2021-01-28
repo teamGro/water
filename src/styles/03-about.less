@@ -1,6 +1,6 @@
 @import "./01-variables.less";
 
-.about {
+.custom-about {
   margin-top: 50px;
   margin-bottom: 50px;
 
@@ -8,7 +8,7 @@
     display: none;
   }
 
-  &__title {
+  &__custom-title {
     margin-bottom: 15px;
   }
 
@@ -39,8 +39,8 @@
       display: block;
       width: 10px;
       height: 10px;
-      border-right: 3px solid @title-font-color;
-      border-bottom: 3px solid @title-font-color;
+      border-right: 3px solid @custom-title-font-color;
+      border-bottom: 3px solid @custom-title-font-color;
       transform: rotate(-45deg);
       transition: border-color @transition-effect;
     }
@@ -60,7 +60,7 @@
 }
 
 @media(min-width: 1024px){
-  .about {
+  .custom-about {
     display: flex;
 
     &__img-box {
@@ -86,10 +86,10 @@
 }
 
 @media(min-width: @desctop-width){
-  .about {
+  .custom-about {
     margin-top: 128px;
 
-    &__title {
+    &__custom-title {
       margin-bottom: 29px;
     }
 

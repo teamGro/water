@@ -1,18 +1,18 @@
-.about {
+.custom-about {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.about__img-box {
+.custom-about__img-box {
   display: none;
 }
-.about__title {
+.custom-about__custom-title {
   margin-bottom: 15px;
 }
-.about__additional-text {
+.custom-about__additional-text {
   display: none;
 }
-.about__more,
-.about__less {
+.custom-about__more,
+.custom-about__less {
   position: relative;
   display: inline-block;
   font-weight: 700;
@@ -22,8 +22,8 @@
   text-transform: uppercase;
   transition: color 0.3s linear, opacity 0.3s linear;
 }
-.about__more::after,
-.about__less::after {
+.custom-about__more::after,
+.custom-about__less::after {
   content: "";
   position: absolute;
   right: -13px;
@@ -36,25 +36,25 @@
   transform: rotate(-45deg);
   transition: border-color 0.3s linear;
 }
-.about__more:hover,
-.about__less:hover,
-.about__more:focus,
-.about__less:focus {
+.custom-about__more:hover,
+.custom-about__less:hover,
+.custom-about__more:focus,
+.custom-about__less:focus {
   cursor: pointer;
   color: #000;
 }
-.about__more:hover::after,
-.about__less:hover::after,
-.about__more:focus::after,
-.about__less:focus::after {
+.custom-about__more:hover::after,
+.custom-about__less:hover::after,
+.custom-about__more:focus::after,
+.custom-about__less:focus::after {
   cursor: pointer;
   border-color: #000;
 }
 @media (min-width: 1024px) {
-  .about {
+  .custom-about {
     display: flex;
   }
-  .about__img-box {
+  .custom-about__img-box {
     display: block;
     width: 42%;
     height: 329px;
@@ -64,7 +64,7 @@
     background-position: center;
     background-size: cover;
   }
-  .about__content-box {
+  .custom-about__content-box {
     width: 58%;
     display: flex;
     flex-direction: column;
@@ -73,14 +73,14 @@
   }
 }
 @media (min-width: 1278px) {
-  .about {
+  .custom-about {
     margin-top: 128px;
   }
-  .about__title {
+  .custom-about__custom-title {
     margin-bottom: 29px;
   }
-  .about__text,
-  .about__additional-text {
+  .custom-about__text,
+  .custom-about__additional-text {
     font-size: 20px;
     line-height: 24px;
   }

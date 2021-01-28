@@ -10,7 +10,7 @@
 .order__content-box {
   text-align: center;
 }
-.order__title {
+.order__custom-title {
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -45,7 +45,7 @@
   .order {
     background-image: url("../img/car-bg.png");
   }
-  .order__container {
+  .order__custom-container {
     display: flex;
   }
   .order__img-box {
@@ -58,7 +58,7 @@
   .order__content-box {
     width: 50%;
   }
-  .order__title {
+  .order__custom-title {
     margin-bottom: 30px;
     color: #fff;
   }
@@ -78,7 +78,7 @@
   .order__content-box {
     width: 675px;
   }
-  .order__title {
+  .order__custom-title {
     font-size: 41px;
     line-height: 50px;
   }

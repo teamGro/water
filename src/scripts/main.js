@@ -33,9 +33,9 @@ $(window).on('resize', () => {
     });
 });
 
-const moreBtn = $('.about__more');
-const lessBtn = $('.about__less');
-const additionalText = $('.about__additional-text');
+const moreBtn = $('.custom-about__more');
+const lessBtn = $('.custom-about__less');
+const additionalText = $('.custom-about__additional-text');
 
 moreBtn.on('click', function() {
     additionalText.slideDown();

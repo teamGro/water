@@ -2,7 +2,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.advantages__title {
+.advantages__custom-title {
   margin-bottom: 25px;
   font-size: 24px;
   text-align: center;
@@ -54,7 +54,7 @@
 .advantages__item_right:last-child::before {
   background-image: url("../img/icon-mobile-6.png");
 }
-.advantages__subtitle {
+.advantages__subcustom-title {
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 14px;
@@ -107,7 +107,7 @@
   .advantages {
     padding-bottom: 150px;
   }
-  .advantages__title {
+  .advantages__custom-title {
     max-width: 630px;
     margin-bottom: 85px;
     margin-right: auto;
@@ -196,7 +196,7 @@
     width: 555px;
     transform: translateY(-30px);
   }
-  .advantages__subtitle {
+  .advantages__subcustom-title {
     font-size: 18px;
     line-height: 22px;
   }
