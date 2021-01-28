@@ -25,6 +25,7 @@
   text-decoration: underline;
 }
 .order__btn {
+  display: block;
   max-width: 242px;
   padding: 13px 30px;
   margin: 0 auto;
