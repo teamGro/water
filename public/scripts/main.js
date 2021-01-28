@@ -40,12 +40,14 @@ alt="Почему стоит заказать воду у нас?">`;
     const lessBtn = $('.about__less');
     const additionalText = $('.about__additional-text');
 
-    moreBtn.on('click', ()=> {
+    moreBtn.on('click', function() {
         additionalText.slideDown();
+        $(this).css('opacity', 0);
     });
 
     lessBtn.on('click', ()=> {
         additionalText.slideUp();
+        moreBtn.css('opacity', 1);
     });
 
 }());
