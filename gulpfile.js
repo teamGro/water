@@ -42,6 +42,7 @@ gulp.task('getAllCSS', () => {
           cascade: false,
         })
       )
+      .pipe(gulp.dest('public/styles'))
       .pipe(concat('styles.css'))
       //.pipe(gulp.dest("public/styles"))
       .pipe(cssmin())

@@ -12,7 +12,6 @@ if ($(window).width() < 768) {
     });
 }
 
-
 $(window).on('resize', () => {
     if ($(window).width() >= 768) {
         owl.trigger('destroy.owl.carousel');

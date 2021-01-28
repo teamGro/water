@@ -1,0 +1,89 @@
+.order {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.order__img {
+  display: none;
+}
+.order__content-box {
+  text-align: center;
+}
+.order__title {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.order__content {
+  margin-bottom: 35px;
+}
+.order__tel:hover,
+.order__tel:focus,
+.order__tel:active {
+  outline: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.order__btn {
+  max-width: 242px;
+  padding: 13px 30px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1690F0;
+  background-color: #F1F6FB;
+  transition: all 0.3s linear;
+}
+.order__btn:hover {
+  color: #fff;
+  border-color: #1482d8;
+  background: #1482d8;
+}
+@media (min-width: 768px) {
+  .order {
+    background-image: url("../img/car-bg.png");
+  }
+  .order__container {
+    display: flex;
+  }
+  .order__img-box {
+    width: 50%;
+    transform: translate(-50px, -60px);
+  }
+  .order__img {
+    display: block;
+  }
+  .order__content-box {
+    width: 50%;
+  }
+  .order__title {
+    margin-bottom: 30px;
+    color: #fff;
+  }
+}
+@media (min-width: 1024px) {
+  .order__img-box {
+    transform: translate(-50px, -160px);
+  }
+}
+@media (min-width: 1278px) {
+  .order {
+    min-height: 796px;
+  }
+  .order__img-box {
+    transform: translate(-150px, -175px);
+  }
+  .order__content-box {
+    width: 675px;
+  }
+  .order__title {
+    font-size: 41px;
+    line-height: 50px;
+  }
+  .order__content {
+    color: #fff;
+    font-size: 28px;
+    line-height: 34px;
+  }
+}

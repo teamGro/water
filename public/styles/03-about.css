@@ -1,0 +1,77 @@
+.about {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about__img-box {
+  display: none;
+}
+.about__title {
+  margin-bottom: 15px;
+}
+.about__more {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1690F0;
+  text-transform: uppercase;
+  transition: color 0.3s linear;
+}
+.about__more::after {
+  content: "";
+  position: absolute;
+  right: -13px;
+  top: 2px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid #1690F0;
+  border-bottom: 3px solid #1690F0;
+  transform: rotate(-45deg);
+  transition: border-color 0.3s linear;
+}
+.about__more:hover,
+.about__more:focus {
+  cursor: pointer;
+  color: #000;
+}
+.about__more:hover::after,
+.about__more:focus::after {
+  cursor: pointer;
+  border-color: #000;
+}
+@media (min-width: 1024px) {
+  .about {
+    display: flex;
+  }
+  .about__img-box {
+    display: block;
+    width: 42%;
+    height: 329px;
+    border-radius: 8px;
+    background-image: url("../img/water.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .about__content-box {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 6%;
+  }
+}
+@media (min-width: 1278px) {
+  .about {
+    margin-top: 128px;
+  }
+  .about__title {
+    margin-bottom: 29px;
+  }
+  .about__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

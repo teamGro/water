@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../webfonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'), url('../webfonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../webfonts/montserrat-v15-latin_cyrillic-500.woff2') format('woff2'), url('../webfonts/montserrat-v15-latin_cyrillic-500.woff') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../webfonts/montserrat-v15-latin_cyrillic-600.woff2') format('woff2'), url('../webfonts/montserrat-v15-latin_cyrillic-600.woff') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../webfonts/montserrat-v15-latin_cyrillic-700.woff2') format('woff2'), url('../webfonts/montserrat-v15-latin_cyrillic-700.woff') format('woff');
+}
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 19.5px;
+  word-wrap: break-word;
+  letter-spacing: 0em;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:focus,
+button:active {
+  outline: none;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 1290px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  color: #1690F0;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+@media (min-width: 1278px) {
+  .container {
+    padding: 0 50px;
+  }
+  .subtitle-text {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    padding: 0;
+  }
+}
