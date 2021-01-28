@@ -31,7 +31,16 @@ $(window).on('resize', () => {
         dotsClass: 'advantages__dots',
         dotClass: 'advantages__dot',
     });
+});
 
+const moreBtn = $('.about__more');
+const lessBtn = $('.about__less');
+const additionalText = $('.about__additional-text');
 
+moreBtn.on('click', ()=> {
+    additionalText.slideDown();
+});
 
+lessBtn.on('click', ()=> {
+    additionalText.slideUp();
 })
