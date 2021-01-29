@@ -11,6 +11,9 @@
 .custom-about__additional-text {
   display: none;
 }
+.custom-about__additional-text > p:not(:last-child) {
+  margin-bottom: 10px;
+}
 .custom-about__more,
 .custom-about__less {
   position: relative;
@@ -57,7 +60,8 @@
     width: 42%;
     height: 329px;
     border-radius: 8px;
-    margin-right: 6%;
+    margin-right: 50px;
+    margin-bottom: 40px;
     background-image: url("../img/water.jpg");
     background-repeat: no-repeat;
     background-position: center;

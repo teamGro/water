@@ -14,6 +14,10 @@
 
   &__additional-text {
     display: none;
+
+    &>p:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   &__more, 
@@ -69,7 +73,8 @@
       width: 42%;
       height: 329px;
       border-radius: 8px;
-      margin-right: 6%;
+      margin-right: 50px;
+      margin-bottom: 40px;
 
       background-image: url("../img/water.jpg");
       background-repeat: no-repeat;
